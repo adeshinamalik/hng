@@ -1,0 +1,252 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+body {
+  background-color: hsl(223, 26%, 21%);
+  position: relative;
+  overflow-x: hidden;
+}
+#inner-body {
+  padding: 0%;
+  margin: 0%;
+  height: auto;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+#inner-body {
+  position: relative;
+}
+li {
+  list-style: none;
+}
+
+a {
+  color: #2b57a4;
+}
+#home {
+  background-image: url('images/Mask\ Group\ 3.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 768px;
+}
+#word {
+  position: relative;
+  top: 20%;
+}
+#word h1 {
+  left: 20%;
+  font-family: 'Mouse Memoirs', cursive;
+  color: #ffffff;
+  font-size: 2rem;
+  padding-left: 2rem;
+  width: 35rem;
+  word-wrap: break-word;
+  line-height: 6rem;
+}
+#word p {
+  padding: 0.3rem 2rem;
+  font-size: 2rem;
+  font-family: cursive;
+  color: white;
+}
+
+button {
+  font-family: 'Signika Negative', sans-serif;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  left: 2rem;
+  top: 1rem;
+  border-radius: 20px;
+  background-color: #ff3e35;
+  border: none;
+  color: #ffffff;
+}
+#img-box {
+  position: relative;
+  top: -1200px;
+  left: 694px;
+}
+#pro {
+  position: relative;
+  z-index: 3;
+  width: 415px;
+  top: -150px;
+}
+#box {
+  width: 401px;
+  height: 400px;
+  border: 3.5px solid #707070;
+  position: relative;
+  left: 587px;
+  top: -2230px;
+  z-index: 2;
+}
+
+#pro-img {
+  position: relative;
+  top: -150px;
+  left: 100px;
+}
+
+#side-img {
+  position: absolute;
+}
+
+.yello {
+  z-index: 5;
+  position: relative;
+  left: 546px;
+  top: -1850px;
+  width: 401px;
+  height: 400px;
+  overflow: hidden;
+  border: 5px solid rgb(90, 52, 166);
+}
+#contact-me {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+.left {
+  width: 40%;
+}
+#contact-me h1 {
+  color: #dfdfdf;
+  border-bottom: 6px solid #f07b61;
+  width: fit-content;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+
+/* ====================================================== */
+/* ====================================================== */
+
+
+@media screen and (max-width: 1050px) {
+    body {
+        background-color: #242325;
+    }
+
+    #theNav {
+        width: 100vw;
+        font-size: 16px;
+    }
+
+    #inner-body {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    #inner-body {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #side-img {
+        grid-area: 1/1;
+        position: relative;
+        left: -450px;
+    }
+
+    img#img-box {
+        display: none;
+    }
+
+    #pro-img {
+        left: 30px;
+    }
+
+    #pro-img {
+        top: 0;
+        left: -20px;
+        transform: scale(0.7);
+    }
+
+    .yello {
+        position: relative;
+        top: 70px;
+    }
+
+    #box {
+        top: 110px;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #inner-body {
+        overflow-y: hidden;
+    }
+
+    #home {
+        padding-left: 0%;
+        top: -80px;
+        left: 0;
+        transform: none;
+    }
+
+    #home {
+        padding-left: 70px;
+        transform: scale(0.7);
+    }
+
+    #home {
+        padding-left: 0%;
+        top: -80px;
+        left: 0;
+        transform: none;
+    }
+
+    #word h1 {
+        font-size: rem;
+        line-height: 4rem;
+        padding-left: 5%;
+    }
+
+    #word {
+        width: 100vw;
+    }
+
+    #word p {
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    #word button {
+        font-size: 1.3rem;
+    }
+
+    #side-img {
+        top: -70px;
+    }
+
+    #pro-img {
+        transform: scale(0.55);
+        left: 70px;
+    }
+}
+
+@media screen and (min-width: 1960px) {
+    body {
+        background-color: white;
+    }
+
+    #inner-body {
+        width: 1400px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: hsl(223, 26%, 21%);
+    }
+}
